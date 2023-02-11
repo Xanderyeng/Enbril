@@ -1,0 +1,9 @@
+export {default as Caption } from './caption/Caption';
+export {default as Contact } from './contact/Contact';
+export {default as Footer } from './footer/Footer';
+export {default as Hero } from './hero/Hero';
+export {default as Portfolio } from './portfolio/Portfolio';
+export {default as How } from './how/How';
+export {default as Logos } from './logos/Logos';
+export {default as WhatWeDo } from './whatWeDo/WhatWeDo';
+export {default as Skills } from './skills/Skills';

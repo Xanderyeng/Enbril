@@ -1,0 +1,24 @@
+.enbrill-footer {
+  padding: 9.6rem 0;
+  /* background: turquoise; */
+  /* align-items: stretch;
+  justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row; */
+}
+
+.enbrill-footer .container {
+    max-width: 120rem;
+    padding: 0rem;
+    margin: 0 auto;
+    display: block;
+    /* background: rosybrown; */
+}
+
+.enbrill-footer .social-icons {
+    width: 6.4rem;
+    height: 6.4rem;
+}

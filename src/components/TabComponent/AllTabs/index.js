@@ -1,0 +1,5 @@
+export { default as All} from './all'
+export {default as Corporate} from './corporate'
+export {default as ECommerce} from './eCommerce'
+export {default as ELearning} from './eLearning'
+export {default as FinTech} from './finTech'

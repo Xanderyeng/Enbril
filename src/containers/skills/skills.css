@@ -1,0 +1,159 @@
+.skills-glass-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* THIS PADDING INTERFERS WITH FLEX */
+  padding: 2rem;
+  margin: auto 1.4rem;
+  gap: 20px;
+  height: 100%;
+  /* width: auto; */
+  background: linear-gradient(
+    147.95deg,
+    rgba(255, 255, 255, 0.05) 19.48%,
+    rgba(255, 255, 255, 0.02) 114.21%
+  );
+  border-radius: 20px;
+  transition: all ease 0.33s;
+}
+
+.skills-glass-card:hover {
+  transform: translateY(-1.2rem);
+  background: rgba(255, 255, 255, 0.1);
+  cursor: crosshair;
+}
+
+.skills-glass-box {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  /* background: sienna; */
+  /* flex-wrap: nowrap; */
+  flex-direction: column;
+  /* padding: 10px 10px; */
+}
+
+.skills-glass-box svg {
+  width: 50px;
+  height: 50px;
+  /* width: auto; */
+  /* height: auto; */
+  /* margin-bottom: 2.4rem; */
+}
+
+.skills-glass-box svg path {
+  transition: all ease 0.85s;
+}
+
+.skills-glass-card .skills-glass-box .skills-logo-svg {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  /* SPACE AROUND EACH SVG TO CREATE WHITE SPACE */
+  padding: 10px;
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  transition: all ease 0.85s;
+}
+
+.skills-glass-box .skill-details {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* padding-top: 2.4rem; */
+}
+
+.skills-glass-box span,
+.skills-glass-box p {
+  align-self: center;
+  /* line-height: 0px; */
+  /* padding: 0.8rem 2.4rem; */
+  margin: 0;
+}
+
+.skills-glass-box p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-top: 1rem;
+}
+
+.skills-logo-percentage {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+}
+
+.skills-glass-box .skills-progress-bar {
+  background-color: tomato;
+  /* content: ""; */
+  width: 80%;
+  height: 2px;
+  margin-top: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 89em) {
+}
+
+@media (max-width: 84em) {
+}
+
+@media (max-width: 75em) {
+}
+
+@media (max-width: 59em) {
+}
+
+@media (max-width: 44em) {
+  .skills-glass-card:hover {
+    transform: translateY(0rem);
+    background: linear-gradient(
+      147.95deg,
+      rgba(255, 255, 255, 0.05) 19.48%,
+      rgba(255, 255, 255, 0.02) 114.21%
+    );
+  }
+
+  .skills-glass-card:hover .skills-logo-svg {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 34em) {
+  .skills-glass-card {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* ACTUAL DIMENSIONS OF THE SVG LOGO - DEFAULT SVG SIZE IS 50 X 50 */
+  .skills-glass-box svg {
+    width: 35px;
+    height: 35px;
+  }
+  /* WHITE SPACE AROUND THE SVG */
+  .skills-glass-card .skills-glass-box .skills-logo-svg {
+    width: auto;
+    height: auto;
+    padding: 0.6rem;
+  }
+
+  .skills-glass-box span,
+  .skills-glass-box p {
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.02em;
+  }
+}

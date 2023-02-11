@@ -1,0 +1,132 @@
+/* Tab Container */
+.tabs {
+  width: 100%;
+  height: auto;
+  /* min-height: 400px; */
+  /* TAB SECTION BACKGROUND FOR TESTING */
+  /* background: #053742; */
+  margin: 0 auto;
+  /* ADDS PADDING / SPACING WITHIN THE TAB CONTAINER ITSELF */
+  /* ACTIVATE TO ADD CONTENT WIHTIN THE TAB CONTAINER BOX */
+  /* padding: 2rem 1rem; */
+  color: #e8f0f2;
+  border-radius: 10px;
+  /* @media (max-width: 769px) {
+    padding: 2rem 0;
+  } */
+}
+
+.tabs ul {
+    justify-content: space-around;
+}
+
+/* Tab Navigation */
+.tabs ul.nav {
+  width: 100%;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #39a2db; */
+  border-radius: 10px;
+  padding: 1rem;
+  /* padding-left: 0px; */
+  /* background: chocolate; */
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+/* TO STYLE TAB WHEN ACTIVE */
+.tabs ul li.nav:active {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 18px 30px; */
+  gap: 10px;
+  isolation: isolate;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  /* border-bottom-left-radius: 10px; */
+  /* border-top-left-radius: 10px; */
+  
+}
+
+.tabs ul.nav li {
+  width: 50%;
+  padding: 1rem;
+  /* ADDS SPACE BETWEEN THE TAB BUTTONS */
+  margin: 0 1.4rem !important;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+  border-radius: 10px;
+  /* border-bottom-left-radius: 10px; */
+  /* border-top-left-radius: 10px; */
+}
+.tabs ul.nav li:nth-child(2) {
+    /* border-radius: 0; */
+    border-radius: 10px;
+    /* border-bottom-right-radius: 10px; */
+    /* border-top-right-radius: 10px; */
+  }
+  .tabs ul.nav li:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  .tabs ul.nav li.active {
+    
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+
+}
+
+.FirstTab p,
+.SecondTab p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 89em){
+
+}
+
+@media (max-width: 84em){
+
+}
+
+@media (max-width: 75em) {
+  
+}
+
+@media (max-width: 59em) {
+  
+}
+
+@media (max-width: 44em) {
+  
+}
+
+@media (max-width: 34em) {
+  .tabs{
+    padding: 0rem;
+  }
+  .tabs ul.nav {
+    font-size: 1.6rem;
+    padding: 0;
+    letter-spacing: 1.1px;
+  }
+  .tabs ul.nav li{
+    padding: 0.6rem 1rem;
+    margin: 0;
+  }
+  
+}

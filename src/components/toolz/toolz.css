@@ -1,0 +1,89 @@
+.section-tools {
+  padding: 9.6rem 0;
+  display: block;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background: olive; */
+}
+
+.section-tools .container {
+  max-width: 120rem;
+  padding: 0rem;
+  margin: 0 auto 6.2rem auto;
+  /* background: rosybrown; */
+  /* overflow: overlay; */
+  /* overflow: visible; */
+  /* THE CSS BELOW POSITIONS AN ELEMENT ABOSOLUTELY AND CENTERS IN WIHITN A DIV */
+  /* position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1; */
+}
+
+.section-tools .react-multi-carousel-item{
+  padding: 1.4rem 0rem;
+}
+
+.grid--6-cols {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.tools-grid {
+  display: grid;
+  /* flex-direction: column; */
+  flex-direction: row;
+  margin: 2.4rem auto;
+  gap: 1.8rem;
+  /* padding: 0 1rem; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.tool {
+  /* width: 50px; */
+  /* height: 50px; */
+  /* background: wheat; */
+  align-self: center;
+}
+
+.section-tools .contact-me{
+  position: relative;
+  /* THIS CENTERS THE RELATIVELY POSITIONED BUTTON */
+  margin: auto;
+}
+
+@media (max-width: 89em) {
+  .section-tools .container {
+    padding: 0 4.8rem;
+  }
+}
+@media (max-width: 75em) {
+  .section-tools .container {
+    padding: 0 4.8rem;
+  }
+}
+@media (max-width: 59em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-tools .container {
+    padding: 1rem;
+  }
+}
+@media (max-width: 44em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section-tools  {
+    padding-bottom: 0rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+}

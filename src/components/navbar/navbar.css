@@ -1,0 +1,301 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0rem 4.8rem;
+  position: relative;
+}
+
+.navlogo {
+  /* height: 100%; */
+  background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+/* .navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    justify-content:  space-between;
+    align-items: center;
+} */
+
+/* .navbar-links_logo{
+    margin-right: 2rem;
+} */
+
+/* .navbar-links_logo img {
+    width: 1.8rem;
+} */
+
+.navbar-links_container {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+  /* flex-direction: row; */
+  align-items: center;
+  font-family: var(--font-family);
+  /* line-height: 25px; */
+  text-transform: capitalize;
+}
+
+/* .btn {
+    background-color: var(--btn-color);
+    color: var(--color-text);
+    font-size: 0.8rem;
+    border-radius: var(--btn-radius);
+    margin: 0;
+    padding: 0.4rem 1.4rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+} */
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-link.nav-cta:link {
+  padding: 0.8rem 2.4rem;
+  background-color: var(--btn-color);
+  border-radius: var(--btn-radius);
+  transition: all ease-in-out 0.55s;
+  /* font-size: 4rem; */
+}
+
+.nav-link.nav-cta:link:hover {
+  transform: scale(1.05) translateY(-0.6rem) ;
+  /* transform: translateY(-0.6rem); */
+  background: #362266;
+}
+
+/* .navbar-links_container,
+.nav-link {
+    margin: 0 0.8rem;
+} */
+
+/* PUT THESE IN ANOTHER WINDOW FOR BETTER PRODUCTIVITY
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+.main_nav_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main_nav_link:link,
+.main_nav_link:visited {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main_nav_link:hover,
+.main_nav_link:active {
+  color: var(--shade);
+}
+
+/* CALL TO ACTION BUTTON IN THE NAVBAR */
+
+.main_nav_link.nav_cta:link,
+.main_nav_link.nav_cta:visited {
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  border-radius: 9px;
+  background-color: #e67e22;
+  /* box-shadow: inset 0 0 0 3px #fff; */
+}
+
+.main_nav_link.nav_cta:hover,
+.main_nav_link.nav_cta:active {
+  background-color: var(--shade);
+}
+
+.btn_mobile_nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* THIS FINALY SOLVES THE CLOSE BUTTON ISSUE. PLACES THE CLOSE BUTTON AT THE VERY TOP */
+
+.hamburger-react {
+  z-index: 1;
+}
+
+/* ---------------------------- */
+/* BELOW 944px ( Tablets )*/
+/* ---------------------------- */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  
+  /* MOBILE */
+
+  .header{
+    height: 6.4rem;
+  }
+
+  .icon_mobile_nav {
+    width: 4.8rem;
+    height: 4.8rem;
+    color: #333;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn_mobile_nav {
+    display: block;
+    z-index: 999; /* To ensure the close button focused state always stays on top */
+  }
+
+  .main_nav {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    /* overflow-x: hidden; */
+    transition: all ease-in 0.8s;
+
+    /* Hide the Navigation*/
+
+    /* display: none; -- This allows no Navigation at all */
+
+    /* Hide the Element visually */
+    opacity: 0;
+
+    /* Make it in accessible to Mouse and Keyboards */
+    pointer-events: none;
+
+    /* Hide it from screen readers*/
+    visibility: hidden;
+  }
+
+  .main_nav_link:link {
+    font-size: 3rem;
+  }
+
+  .open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: Auto;
+    transform: translateX(0);
+    /* z-index: 0; */
+    /* transform: translateX(100%); */
+  }
+
+  .close {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+  }
+
+  .icon_mobile_nav_open {
+    display: block;
+  }
+
+  .icon_mobile_nav {
+    display: none;
+    /* visibility: none; */
+  }
+
+  .main_nav_list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main_nav_list:link,
+  .main_nav_list:visited {
+    font-size: 3.2rem;
+  }
+
+  .gradient__nav-bg {
+    /* PLACES THE COLOR ABOVE THE CLOSE ICON */
+    z-index: 1;
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(
+      circle at 0% 0%,
+      rgba(83, 14, 68, 1) 0%,
+      rgba(2, 2, 5, 0.93) 25%,
+      rgba(2, 2, 5, 0.93) 80%,
+      rgba(14, 96, 91, 1) 100%
+    );
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(
+      circle at 0% 0%,
+      rgba(83, 14, 68, 1) 0%,
+      rgba(2, 2, 5, 0.93) 25%,
+      rgba(2, 2, 5, 0.93) 80%,
+      rgba(14, 96, 91, 1) 100%
+    );
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(
+      circle at 0% 0%,
+      rgba(83, 14, 68, 1) 0%,
+      rgba(2, 2, 5, 0.93) 25%,
+      rgba(2, 2, 5, 0.93) 80%,
+      rgba(14, 96, 91, 1) 100%
+    );
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(
+      circle at 0% 0%,
+      rgba(83, 14, 68, 1) 0%,
+      rgba(2, 2, 5, 0.93) 25%,
+      rgba(2, 2, 5, 0.93) 80%,
+      rgba(14, 96, 91, 1) 100%
+    );
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(
+      circle at 0% 0%,
+      rgba(83, 14, 68, 1) 0%,
+      rgba(2, 2, 5, 0.93) 25%,
+      rgba(2, 2, 5, 0.93) 80%,
+      rgba(14, 96, 91, 1) 100%
+    );
+  }
+}
+
+@media (max-width: 34em){
+  .header a {
+    display: block;
+  }
+  
+}

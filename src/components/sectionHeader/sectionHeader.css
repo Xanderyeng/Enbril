@@ -1,0 +1,85 @@
+.section-header {
+  position: relative;
+  z-index: 2;
+  /* background-color:bisque; */
+  margin-bottom: 15.8rem;
+}
+
+.section-header .subheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  line-height: 2;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255.1);
+  opacity: 0.7;
+  margin-bottom: 2.4rem;
+  position: relative;
+  z-index: 5;
+}
+
+.section-header .subheading svg {
+  width: 8rem;
+  height: 1rem;
+  justify-content: center;
+}
+
+.section-header .svgLeft {
+  padding-right: 1rem;
+}
+
+.section-header .svgRight {
+  padding-left: 1rem;
+}
+
+.section-header .heading-secondary {
+  display: block;
+  /* justify-content: center; */
+  text-align: center;
+  font-size: 4.8rem;
+  line-height: 1.05;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 5;
+  /* background-image: url('../../assets/svg/Ellipse.svg');
+    background-repeat: no-repeat;
+    background-position: center; */
+  /* overflow: overlay; */
+  /* overflow: visible; */
+}
+
+.section-header .elipse {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  margin: -14.8rem auto;
+  transform: rotateX(25deg);
+  transform: scale(0.8);
+  /* top: 0; */
+  /* left: 0 */
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 34em) {
+  .section-header .heading-secondary {
+    font-family: "Maison Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 32px;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* .section-header .elipse::after{
+    
+  } */

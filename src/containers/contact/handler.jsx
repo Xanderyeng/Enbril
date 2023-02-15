@@ -21,7 +21,10 @@ const handleFormSubmit = (values, actions) => {
     axios.post( `https://us14.api.mailchimp.com/3.0/lists/${listId}/members`, payload, 
     {
       headers: {
-        Authorization: ` Basic ${apikey}`
+        auth: {
+            username: 'anystring',
+            password: 'd04894d8268a8ac2fb163950bd01b863-us14'
+        }
       }
     })
     .then(response => {

@@ -2,7 +2,7 @@ import React from 'react';
 import Masonry from 'masonry-layout';
 import './msry.css'
 import {image1, image2, image3, image4, image5, image6, } from "../../assets/img/index.js";
-import { SSI, Dolphin, Spectrum, LWPS, Intel } from '../../assets/projects/index'
+import { SSI, Dolphin, Spectrum, LWPS, Intel, Quickmart } from '../../assets/projects/index'
 
 const links = {
   SSI: 'https://ssisouthsudan.com/',
@@ -40,7 +40,7 @@ class ProjectLayout extends React.Component {
         <div className="grid-item" style={{ backgroundImage: `url(${Intel})`, backgroundSize: 'cover', height: '370px' }} ><a href={links.Intel} target="_blank" rel="noopener">
         <span className="link"></span>
       </a></div>
-        <div className="grid-item" style={{ backgroundImage: `url(${image6})`, backgroundSize: 'cover', height: '370px' }} ><a href={links.Quickmart} target="_blank" rel="noopener">
+        <div className="grid-item" style={{ backgroundImage: `url(${Quickmart})`, backgroundSize: 'cover', height: '370px' }} ><a href={links.Quickmart} target="_blank" rel="noopener">
         <span className="link"></span>
       </a></div>
       </div>

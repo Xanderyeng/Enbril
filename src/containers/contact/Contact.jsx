@@ -1,31 +1,85 @@
-import { React, useState } from "react";
+import { React, useState, useRef } from "react";
 import { svgLeft } from "../../assets";
 import { svgRight } from "../../assets";
-import { elipse, SMS, contactPhone, locationPin, userSVG, mailSVG } from "../../assets/svg";
+import {
+  elipse,
+  SMS,
+  contactPhone,
+  locationPin,
+  userSVG,
+  mailSVG,
+} from "../../assets/svg";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import handleFormSubmit from "./handler";
+import emailjs from "@emailjs/browser";
+// import handleFormSubmit from "./handler";
 import "./contact.css";
 
 const Contact = () => {
+  // --------- EMAILJS ---- FORM FUNCTIONS -----------
+
+  const form = useRef();
+
+  const Result = () => {
+    return (
+      <p className='submit-message fadeInBottom'>
+        Message recieved.
+        <br />
+        We shall be in touch with you Soon!
+      </p>
+    );
+  };
+
+  const [result, showResult] = useState(false);
+  const sendEmail = (e) => {
+    e.preventDefault;
+
+    emailjs
+      .sendForm(
+        "service_tjj7wkn",
+        "template_tspwuuo",
+        form.current,
+        "WdH3o5lrRAnNfbzSF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    // e.target.reset();
+    showResult(true);
+  };
+
+  // HIDE THE RESULT MESSAGE
+
+  setTimeout(() => {
+    showResult(false)
+  }, 15000)
+
+  // --------- EMAILJS ------ END -------
 
   const formik = useFormik({
     initialValues: {
-      name: "",
+      from_name: "",
       email: "",
       message: "",
     },
     // FORM VALIDATION
     validationSchema: Yup.object({
-      name: Yup.string().required("Name is required").min(4),
+      from_name: Yup.string().required("Name is required").min(4),
       email: Yup.string()
         .email("Invalid email address")
         .required("required")
         .min(8),
+      message: Yup.string().min(4),
     }),
-       // ON FORM SUBMIT
+    // ON FORM SUBMIT
 
-       onSubmit: handleFormSubmit,
+    onSubmit: sendEmail,
     // onSubmit: (values) => {
     //   console.log(values);
     //   handleFormSubmit();
@@ -53,20 +107,24 @@ const Contact = () => {
           <div className='info'>
             <span>{contactPhone} +254 779 463 799</span>
             <span>{SMS} hello@enbril.co.ke</span>
-            <span>{locationPin} 102B Sweetwaters, Machakos</span>
+            <span>{locationPin} 102B Rivers Blvd, Machakos</span>
           </div>
         </div>
 
         {/* CONTACT FORM */}
 
         <div className='connect-form '>
-          <form className='form-control' onSubmit={formik.handleSubmit}>
+          <form
+            className='form-control'
+            onSubmit={formik.handleSubmit}
+            ref={form}
+          >
             <div>
               {/* CONTACT FORM CLIENT NAME */}
               <label>
-                {formik.errors.name && formik.touched.name
-                  ? formik.errors.name
-                  : "Your Name"}
+                {formik.errors.from_name && formik.touched.from_name
+                  ? formik.errors.from_name
+                  : "Your Name *"}
                 {/* your name */}
               </label>
 
@@ -77,8 +135,8 @@ const Contact = () => {
                     id='name'
                     className='form-name'
                     type='text'
-                    name='name'
-                    value={formik.values.name}
+                    name='from_name'
+                    value={formik.values.from_name}
                     // onChange={(e) => setName(e.target.value)}
                     onChange={formik.handleChange}
                     placeholder='Enter your name'
@@ -94,7 +152,7 @@ const Contact = () => {
               <label>
                 {formik.errors.email && formik.touched.email
                   ? formik.errors.email
-                  : "Mail"}
+                  : `Mail *`}
               </label>
               <div className='form-input-box'>
                 {mailSVG}
@@ -118,7 +176,7 @@ const Contact = () => {
 
               <label>message</label>
               <div className='form-input-box'>
-                <input
+                <textarea
                   id='message'
                   className='form-message'
                   type='text'
@@ -128,21 +186,22 @@ const Contact = () => {
                   onBlur={formik.handleBlur}
                   placeholder='Type your message'
                   // style={{ height: "100px"}}
-                ></input>
+                ></textarea>
               </div>
             </div>
             <button
               disabled={!formik.isValid || !formik.dirty}
+              visible={result ? {display: "none"} : null}
               type='submit'
               id='submit'
               className='primary-btn'
             >
               send message
             </button>
+            <div> {result ? <Result /> : null}</div>
           </form>
         </div>
       </div>
-     
     </section>
   );
 };

@@ -125,6 +125,7 @@
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 500;
+  transition: all 0.3s ease-in-out;
 }
 
 .connect-form .form-control label:nth-child(3),
@@ -169,20 +170,34 @@
 .form-input-box input:visited,
 /* .form-input-box input:focus-visible, */
 /* .form-input-box input:focus, */
+.form-input-box input:-internal-autofill-selected,
 .form-input-box input:target,
 .form-input-box input:focus-within {
   border: 0px;
   box-shadow: none;
   /* outline: 0px; */
+  width: 100%;
   fill: none;
   border-color: none !important;
   background: rgba(0, 0, 0, 0) !important;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
-/* .form-input-box .form-message{
-  display: inline-block;
+.form-input-box textarea {
+  /* display: inline-block; */
+  border: 0px;
+  box-shadow: none;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(134, 142, 150, 1);
+  background: rgba(0, 0, 0, 0) !important;
+  padding-left: 1rem;
+  width: 100%;
 }
+
+/* 
 .form-message::first-letter {
   text-transform: uppercase;
 } */
@@ -195,6 +210,23 @@
   width: fit-content;
   align-self: flex-end;
   margin-top: 1.4rem;
+}
+
+.submit-message {
+  font-family: var(--font-family);
+  font-size: 1.8rem;
+  text-align: center;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
 }
 
 @media (max-width: 34em) {

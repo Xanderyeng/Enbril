@@ -6,7 +6,7 @@ import "./portfolio.css";
 
 const Portfolio = () => {
   return (
-    <section className='portfolio-section'>
+    <section className='portfolio-section' id="portfolio">
       <div className='container'>
       <SectionHeader subTitle={'services'} title1={'take a look at some of'} title2={'my work'} setOnElipse/>
         <div className='portfolio-tabs'>

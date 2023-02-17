@@ -54,7 +54,7 @@ const Toolz = () => {
   // </svg>
 
   return (
-    <section className='section-tools'>
+    <section className='section-tools' id="skills">
       <SectionHeader subTitle={"skills"} title1={"Tools and experience"} />
       {/* <div className='container tools-grid grid--6-cols grid--3-cols grid--2-cols'> */}
       <div className='container '>
@@ -68,7 +68,7 @@ const Toolz = () => {
           swipeable={true}
           // means to render carousel on server-side.
           ssr={true}
-          arrows={false}
+          arrows={true}
           draggable={true}
           showDots={false}
           renderDotsOutside={false}

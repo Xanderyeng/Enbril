@@ -1,13 +1,14 @@
 import React from "react";
 import { IonIcon } from "@ionic/react";
 import { handLeft } from "ionicons/icons";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./hero.css";
 import { profile } from "../../assets";
 import {casual} from "../../assets"
 
 const Hero = () => {
   return (
-    <section className='section-hero'>
+    <section className='section-hero' id="home">
       <div className='hero-grid'>
         <div className='hero-text-box grid-item'>
           {/* <p>🖐️Hey, I'm</p> */}
@@ -21,7 +22,7 @@ const Hero = () => {
             <p>You only have one chance to make a first impression.</p>
             <p>Let's make it an amazing one.</p>
           </span>
-          <button className='primary-btn'>Let's talk</button>
+      <AnchorLink href='#contact'><button className='primary-btn'>Let's talk</button></AnchorLink>
         </div>
         <div className='hero-img-box grid-item'>
           <div className='img-box'>

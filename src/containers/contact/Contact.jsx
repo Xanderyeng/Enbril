@@ -87,7 +87,7 @@ const Contact = () => {
   });
 
   return (
-    <section className='section-contact'>
+    <section className='section-contact' id="contact">
       <div className='container grid grid--2-cols'>
         {/* Contact Info */}
         <div className='connect-info'>

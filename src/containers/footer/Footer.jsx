@@ -33,7 +33,7 @@ const Footer = () => {
           <Nav className='footer-nav'>
             <ul>
               <NavItem>
-                <Link to='services' className='nav-link'>
+                <Link to='#home' className='nav-link'>
                   Home
                 </Link>
               </NavItem>

@@ -14,7 +14,7 @@ const How = () => {
     
 
   return (
-    <section className='section-how-it-works'>
+    <section className='section-how-it-works' id="how-we-do-it">
     <SectionHeader subTitle={'process'} title1={'how'}/>
     {/* <h2>How</h2> */}
       <div className='container grid grid--4-cols grid--2-cols grid--1-cols'>

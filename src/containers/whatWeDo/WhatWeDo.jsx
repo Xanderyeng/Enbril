@@ -12,7 +12,7 @@ import SectionHeader from "../../components/sectionHeader/SectionHeader";
 
 const WhatWeDo = () => {
   return (
-    <section className='section-what-we-do'>
+    <section className='section-what-we-do' id="services">
       {/* <div className="four-pointed-star"></div> */}
 
       {/* <span className='p-star'>{pStar}</span> */}

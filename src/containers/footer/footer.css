@@ -129,8 +129,14 @@
   text-decoration: underline;
 }
 
-@media (max-width: 34em) {
+@media (max-width: 44em) {
+  .bottom-footer-bar {
+    padding: 1.4rem 2.4rem 0 2.4rem;
+  }
 
+}
+
+@media (max-width: 34em) {
   .enbrill-footer {
     padding-bottom: 1rem;
   }
@@ -139,17 +145,17 @@
   .footer-nav ul {
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    row-gap: 3.2rem;
+    flex-direction: row;
+    row-gap: 1.8rem;
     flex-wrap: wrap;
     padding-bottom: 3.2rem;
+    padding: 2.4rem 1.4rem;
     /* align-items: stretch; */
   }
   .bottom-footer-bar {
     padding: 1.4rem 2.4rem 0 2.4rem;
     flex-direction: column-reverse;
     gap: 1.4rem;
-    
   }
   .bottom-footer-bar .copyright,
   .bottom-footer-bar .terms-privacy-policy {
@@ -159,5 +165,4 @@
   .copyright .heart-icon {
     font-size: 1.8rem;
   }
-
 }

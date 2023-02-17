@@ -1,5 +1,6 @@
 import React from 'react';
 import Masonry from 'masonry-layout';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import './msry.css'
 import {image1, image2, image3, image4, image5, image6, } from "../../assets/img/index.js";
 import { SSI, Dolphin, Spectrum, LWPS, Intel, Quickmart } from '../../assets/projects/index'

@@ -4,6 +4,7 @@ import { Sling as Hamburger } from "hamburger-react";
 import logo from "../../assets/Custom logo.svg";
 import { Link } from "react-router-dom";
 import { Nav, NavItem } from "reactstrap";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./navbar.css";
 
 // import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
@@ -58,10 +59,10 @@ const Navbar = () => {
           </NavItem>
         </Nav> */}
       {/* <button className="btn btn-navbar_link">contact</button> */}
-
-      <a href='#' className='navlogo'>
+          <AnchorLink href="#home" className='navlogo'>chepkiyeng</AnchorLink>
+      {/* <a href='/' className='navlogo'>
         chepkiyeng
-      </a>
+      </a> */}
       {/* <img src={logo} alt='Omnifood Logo' className={logo} /> */}
 
       <Nav
@@ -78,25 +79,25 @@ const Navbar = () => {
 
           <NavItem>
             <Link to='services' className='nav-link'>
-              services
+             <AnchorLink href="#services">services</AnchorLink> 
             </Link>
           </NavItem>
 
           <NavItem>
             <Link to='portfolio' className='nav-link'>
-              portfolio
+            <AnchorLink href="#portfolio">portfolio</AnchorLink>
             </Link>
           </NavItem>
 
           <NavItem>
             <Link to='skills' className='nav-link'>
-              skills
+            <AnchorLink href="#skills">skills</AnchorLink>
             </Link>
           </NavItem>
 
           <NavItem>
-            <Link to='contact' className='nav-link nav-cta'>
-              contact
+          <Link to='contact' className='nav-link nav-cta'>
+          <AnchorLink href="#contact">contact</AnchorLink>
             </Link>
           </NavItem>
         </ul>

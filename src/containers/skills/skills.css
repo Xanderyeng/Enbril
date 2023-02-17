@@ -96,7 +96,9 @@
 }
 
 .skills-glass-box .skills-progress-bar {
-  background-color: tomato;
+  background: #b1cf5f;
+  opacity: 0.1;
+  /* background-color: tomato; */
   /* content: ""; */
   width: 80%;
   height: 2px;

@@ -10,7 +10,8 @@ const links = {
   Spectrum: 'https://spectrumadvertizing.com/',
   Dolphin: 'https://greendolphin.co.ke/',
   LWPS: 'https://lwps.sc.ke/',
-  Intel: 'https://brandintel.co.ke/',
+  // Intel: 'https://brandintel.co.ke/',
+  Intel: '',
   Quickmart: 'https://quickmart.co.ke/'
 };
 

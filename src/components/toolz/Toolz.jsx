@@ -10,6 +10,9 @@ import {
   reactjs,
   elementor,
   wordpress,
+  materialUI,
+  tailwind,
+  dockerTile,
 } from "../../assets/svg";
 import "./toolz.css";
 import SectionHeader from "../sectionHeader/SectionHeader";
@@ -54,7 +57,7 @@ const Toolz = () => {
   // </svg>
 
   return (
-    <section className='section-tools' id="skills">
+    <section className='section-tools' id='skills'>
       <SectionHeader subTitle={"skills"} title1={"Tools and experience"} />
       {/* <div className='container tools-grid grid--6-cols grid--3-cols grid--2-cols'> */}
       <div className='container '>
@@ -67,6 +70,8 @@ const Toolz = () => {
           responsive={responsive}
           swipeable={true}
           // means to render carousel on server-side.
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
           ssr={true}
           arrows={true}
           draggable={true}
@@ -76,19 +81,14 @@ const Toolz = () => {
           infinite={true}
         >
           <Skills SVG={javascript} title={"javascript"} percentage={"95%"} />
+          <Skills SVG={materialUI} title={"material UI"} percentage={"85%"} />
           <Skills SVG={nodejs} title={"node"} percentage={"90%"} />
           <Skills SVG={reactjs} title={"react"} percentage={"90%"} />
+          <Skills SVG={tailwind} title={"tailwind"} percentage={"85%"} />
           <Skills SVG={mongo} title={"mongo"} percentage={"88%"} />
           <Skills SVG={elementor} title={"elementor"} percentage={"95%"} />
-          <Skills SVG={wordpress} title={"mongo"} percentage={"85%"} />
+          <Skills SVG={wordpress} title={"wordpress"} percentage={"85%"} />
         </Carousel>
-        {/* <Skills SVG={mongo} title={'mongo'} percentage={'90%'} /> */}
-
-        {/* <div className='tool'></div>
-        <div className='tool'></div>
-        <div className='tool'></div>
-        <div className='tool'></div>
-        <div className='tool'></div> */}
       </div>
       {/* <button className="primary-btn contact-me">contact me</button> */}
     </section>

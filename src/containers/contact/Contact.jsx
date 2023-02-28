@@ -107,7 +107,7 @@ const Contact = () => {
           <div className='info'>
             <span>{contactPhone} +254 779 463 799</span>
             <span>{SMS} hello@enbril.co.ke</span>
-            <span>{locationPin} 102B Rivers Blvd, Machakos</span>
+            <span>{locationPin} 102B, Machakos</span>
           </div>
         </div>
 

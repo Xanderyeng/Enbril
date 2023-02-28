@@ -20,7 +20,7 @@ const Skills = (props) => {
           <SkillsBar/> */}
           </div>
         <div className='skill-details'>
-          <span className='skills-logo-percentage'>{props.percentage}</span>
+          {/* <span className='skills-logo-percentage'>{props.percentage}</span> */}
           <p className='skill-name' style={{color: `${props.color}`}}>{props.title}</p>
         </div>
       </div>

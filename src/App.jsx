@@ -14,7 +14,7 @@ const App = () => {
       {/* <section>
         <Logos />
       </section> */}
-        
+              
           <WhatWeDo />
         {/* <section>
         </section> */}

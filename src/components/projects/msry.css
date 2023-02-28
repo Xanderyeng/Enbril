@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 34em) {
+  .msry-grid .grid-item:hover{
+    animation-name: none;
+  }
   .msry-grid {
     margin: 0 auto;
   }

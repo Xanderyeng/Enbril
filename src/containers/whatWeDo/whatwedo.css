@@ -1,5 +1,5 @@
 .section-what-we-do {
-  padding: 9.6rem 0;
+  padding: 20.6rem 0;
   display: block;
   position: relative;
 }
@@ -61,7 +61,7 @@
   /* padding: 9.6rem 9.6rem 4.8rem 9.6rem; */
   grid-template-columns: 1fr 1fr 1fr;  
   /* SPACING FROM THE HEADING TITLE AND ELIPSE -- ELIPSE HAS AN OFFSET OF -15.8REM */
-  margin-top: 9.6rem;
+  margin-top: 12.6rem;
 }
 
 .section-what-we-do .services-grid header p {
@@ -78,9 +78,9 @@
 
 /* 4 POINT STAR */
 
-.four-pointed-star {
+/* .four-pointed-star {
   position: relative;
-  /* margin:1em auto; */
+  margin:1em auto;
   width: 1em;
   font-size: 12em;
   top: 0;
@@ -103,7 +103,7 @@
   width: 1em;
   height: 1.15em;
   transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
-}
+} */
 
 @media (max-width: 89em){
   .section-what-we-do .container {

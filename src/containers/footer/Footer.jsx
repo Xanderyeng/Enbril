@@ -13,10 +13,10 @@ import {
 import "./footer.css";
 
 const links = {
-  github: "https://github.com/",
+  github: "https://github.com/Xanderyeng",
   pinterest: "https://pinterest.",
-  discord: "https://discord.",
-  linkedIn: "https://link",
+  discord: "https://discord.com/channels/423464391791476747/@home",
+  linkedIn: "https://www.linkedin.com/in/alex-chepkiyeng-30626172/",
 };
 
 const Footer = () => {

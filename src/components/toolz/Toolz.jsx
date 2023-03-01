@@ -36,7 +36,7 @@ const responsive = {
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    partialVisibilityGutter: 120, // this is needed to tell the amount of px that should be visible.
+    partialVisibilityGutter: 160, // this is needed to tell the amount of px that should be visible.
     showDots: true,
   },
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "style-it";
 
-export const Star = ({color,scale,top,right, blur}) => {
+export const Star = ({color,scale,top,right, blur, topMobile, rightMobile}) => {
   return Style.it(
     `
     :root {
@@ -66,6 +66,13 @@ export const Star = ({color,scale,top,right, blur}) => {
       border-left: 1em solid transparent;
       transform: rotate(-70deg);
       content: "";
+    }
+
+    @media (max-width: 34em){
+      .star-five {
+        top: ${topMobile}; 
+        right: ${rightMobile};
+      }
     }
   `,
     <div className='star-five pruple'>

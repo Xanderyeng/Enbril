@@ -55,7 +55,7 @@
 .hero-text-box p:nth-child(3) {
   font-style: normal;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.4rem;
   line-height: 1.4;
   /* color: #ffffff; */
   opacity: 0.7;
@@ -67,9 +67,9 @@
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.8;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -108,6 +108,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: -24rem;
+  z-index: 2;
 }
 
 /* Tilted Glass Rectangle  */
@@ -122,6 +123,7 @@
   border-radius: 100px;
   transform: rotate(20.44deg);
   background-blend-mode: darken;
+  z-index: 3;
 }
 
 .img-box:hover {

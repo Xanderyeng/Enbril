@@ -25,6 +25,7 @@
     "react-multi-carousel": "^2.8.2",
     "react-router-dom": "^6.6.1",
     "reactstrap": "^9.1.5",
+    "style-it": "^2.1.4",
     "yup": "^1.0.0"
   },
   "devDependencies": {

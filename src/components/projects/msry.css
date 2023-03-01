@@ -2,6 +2,7 @@
   width: 100%;
   /* display: grid; */
   margin: 0 auto;
+  z-index: 1;
 }
 
 .msry-grid .grid-item {

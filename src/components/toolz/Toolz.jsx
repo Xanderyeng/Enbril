@@ -30,7 +30,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
-    items: 3,
+    items: 4,
     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
   },
   mobile: {

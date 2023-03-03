@@ -3,7 +3,7 @@ import { Contact, Footer, Hero, How, Logos, Portfolio, WhatWeDo } from "./contai
 import { Star } from "./components/Star/Star";
 import "./App.css";
 import { Navbar, Toolz } from "./components";
-import { MouseScroll } from "./components/mouseScroll/scroll";
+import { MouseScroll } from "./components/mouseScroll/Scroll";
 
 const App = () => {
   return (

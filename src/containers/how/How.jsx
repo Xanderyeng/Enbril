@@ -22,7 +22,7 @@ const How = () => {
         <Features icon={searching} title={'planning'} details={'creative yet practical solutions to help bring your visions to life.'}/>
         <Features icon={visual} title={'design'} details={'Engaging website visuals that reflect your unique brand indentity.'}/>
         {/* <Features icon={development} title={'development'} details={'Briging creativity and expertise to deliver exceptional results.'}/> */}
-        <Features icon={development} title={'development'} details={'Briging creativity and expertise to bring your project to life'}/>
+        <Features icon={development} title={'development'} details={'Bringing creativity and expertise to bring your project to life'}/>
         <Features icon={updating} title={'launch'} details={'Secure light speed hosting to unveil your project to the world.'}/>
         {/* <Features icon={updating} title={'launch'} details={'Maximum visibility on fast, secure hosting to unveil your project.'}/> */}
       </div>

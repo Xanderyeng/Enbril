@@ -17,7 +17,7 @@ const Hero = () => {
           </p>
           {/* <h1>Alexander Chepkiyeng</h1> */}
           <h1>Alexander</h1>
-          <p>Web Developer & IT Professional</p>
+          <p>Systems Engineer & Web-app Developer</p>
           <span className='caption '>
             <p>You only have one chance to make a first impression.</p>
             <p>Let's make it an amazing one.</p>

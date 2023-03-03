@@ -7,7 +7,7 @@ import { Navbar, Toolz } from "./components";
 const App = () => {
   return (
     <section>
-      <Star color='rgba(225, 43, 255, 1)' top='30vh' right='-45vw' scale='1.2' blur='190px'/>
+      <Star color='rgba(225, 43, 255, 1)' top='30vh' right='-45vw' scale='1.9' blur='90px'/>
       {/*  */}
       <Star color='rgba(82, 169, 169, 0.5)' top='80vh' right='-0vw' scale='0.95' blur='200px'/>
       {/*  */}

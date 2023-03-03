@@ -84,6 +84,7 @@ const WhatWeDo = () => {
 
         {/*  */}
       </div>
+      
     </section>
   );
 };

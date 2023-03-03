@@ -3,6 +3,7 @@ import { Contact, Footer, Hero, How, Logos, Portfolio, WhatWeDo } from "./contai
 import { Star } from "./components/Star/Star";
 import "./App.css";
 import { Navbar, Toolz } from "./components";
+import { MouseScroll } from "./components/mouseScroll/scroll";
 
 const App = () => {
   return (
@@ -25,7 +26,7 @@ const App = () => {
         <Navbar />
         <Hero />
       </nav>
-
+      <MouseScroll/>
       <WhatWeDo />
       <Portfolio />
       <How />

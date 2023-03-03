@@ -23,7 +23,8 @@ const Navbar = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <header className='header'>
+    <header className='header nav-container'>
+    
       {/* <div className='navbar-links'></div> */}
       {/* <div className='navbar-links_logo'></div> */}
 
@@ -109,6 +110,7 @@ const Navbar = () => {
         toggle={setIsOpen}
         easing='ease-in'
       />
+      
     </header>
   );
 };

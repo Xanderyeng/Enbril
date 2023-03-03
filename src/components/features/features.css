@@ -77,9 +77,15 @@ p {
   opacity: 0.6;
 }
 
+@media (max-width: 89em) {
+  .features-glass-box  p:nth-last-of-type(1){
+    font-size: 1.6rem;
+    padding: 0 1.8rem;
+  }
+}
 
 @media (max-width: 75em) {
-
+  
 }
 
 @media (max-width:59em) {

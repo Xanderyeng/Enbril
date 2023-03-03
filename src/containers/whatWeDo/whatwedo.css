@@ -135,6 +135,15 @@
 }
 
 @media (max-width: 34em) {
+
+  .section-what-we-do{
+    padding: 8.6rem 0;
+  }
+
+  .section-what-we-do .section-header{
+margin-bottom: 9.6rem;
+  }
+
   .section-what-we-do .services-grid {
     grid-template-columns: 1fr;
     row-gap: 4.8rem;

@@ -158,6 +158,9 @@
 }
 
 @media (max-width: 34em) {
+  .section-hero{
+    padding: 4.8rem 0 2.4rem 0;
+  }
   .img-box {
     width: 300px;
     height: 300px;

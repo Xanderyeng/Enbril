@@ -430,10 +430,9 @@
 
 /*  */
 
-@media (max-width: 54em){
+@media (max-width: 34em){
     .section-mouse-scroll{
         display: none;
         visibility: hidden; 
-        
     }
 }

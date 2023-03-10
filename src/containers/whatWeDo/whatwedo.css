@@ -65,7 +65,7 @@
   /* padding: 9.6rem 9.6rem 4.8rem 9.6rem; */
   grid-template-columns: 1fr 1fr 1fr;  
   /* SPACING FROM THE HEADING TITLE AND ELIPSE -- ELIPSE HAS AN OFFSET OF -15.8REM */
-  margin-top: 12.6rem;
+  /* margin-top: 12.6rem; */
 }
 
 .container .services-grid header p {
@@ -133,7 +133,7 @@
 
 @media (max-width: 44em) {
   .container .services-grid {
-    padding: 7.4rem 0 0 0;
+    padding: 0 0 0 0;
     column-gap: 1rem;
   }
 

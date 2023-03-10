@@ -107,7 +107,7 @@
 
 .section-contact .connect-form {
   border-radius: 24px;
-  background-color: rgba(10, 10, 22, 1);
+  background-color: rgba(10, 10, 22, 0.60);
   /* padding: 4.8rem; */
   /* width: fit-content; */
   position: relative;

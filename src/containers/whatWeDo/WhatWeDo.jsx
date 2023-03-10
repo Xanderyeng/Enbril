@@ -23,7 +23,7 @@ const WhatWeDo = () => {
         title1={"I provide wide range of"}
         title2={"digital services"}
       />
-      <div className='container'>
+      <div className='container' id="container">
         {/* <span className='subheading'>
           {svgLeft}
           Services

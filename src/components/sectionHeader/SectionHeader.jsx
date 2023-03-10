@@ -1,4 +1,6 @@
 import {React, useState} from "react";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../../utils/motion";
 import { svgLeft } from "../../assets";
 import { svgRight } from "../../assets";
 import { elipse } from "../../assets/svg";
@@ -8,7 +10,8 @@ const SectionHeader = (props) => {
 
   const[onElipse,setOnElipse] = useState(true);
   return (
-    <div className="section-header">
+    
+    <motion.div variants={textVariant()} className="section-header">
       <span className='subheading'>
         {svgLeft}
         {props.subTitle}
@@ -17,11 +20,9 @@ const SectionHeader = (props) => {
       <h2 className='heading-secondary'>
         <p>{props.title1}</p>
         <p>{props.title2}</p>
-      </h2>
-      
-      {onElipse ? <span className="elipse">{elipse}</span>: setOnElipse}
-      
-    </div>
+      </h2>  
+      {onElipse ? <span className="elipse">{elipse}</span>: setOnElipse} 
+    </motion.div>
   );
 };
 

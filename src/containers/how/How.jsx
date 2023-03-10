@@ -7,9 +7,6 @@ import { visual } from "../../assets";
 import "./how.css";
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
 
-
-
-
 const How = () => {
     
 

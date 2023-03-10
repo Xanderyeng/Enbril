@@ -70,14 +70,15 @@ const Toolz = () => {
           responsive={responsive}
           swipeable={true}
           // means to render carousel on server-side.
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
           ssr={true}
+          autoPlaySpeed={2500}
           arrows={true}
+          keyBoardControl={true}
+          autoPlay={true}
           draggable={true}
           showDots={false}
           renderDotsOutside={false}
-          rtl={false}
+          rtl={true}
           infinite={true}
         >
           <Skills SVG={javascript} title={"javascript"} percentage={"95%"} />

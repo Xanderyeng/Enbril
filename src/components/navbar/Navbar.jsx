@@ -26,6 +26,7 @@ const Navbar = () => {
     <header className='header nav-container'>
     
       {/* <div className='navbar-links'></div> */}
+
       {/* <div className='navbar-links_logo'></div> */}
 
       {/* {logo} */}
@@ -59,7 +60,9 @@ const Navbar = () => {
             </Link>
           </NavItem>
         </Nav> */}
+
       {/* <button className="btn btn-navbar_link">contact</button> */}
+
           <AnchorLink href="#home" className='navlogo'>chepkiyeng</AnchorLink>
       {/* <a href='/' className='navlogo'>
         chepkiyeng
@@ -70,36 +73,36 @@ const Navbar = () => {
         className={`${isOpen ? "open" : "close"} main_nav gradient__nav-bg `}
       >
         <ul className='main_nav_list'>
-          {/* <li>
+          { /* <li>
             <NavItem>
             <Link to='services' className='nav-link'>
               clients
             </Link>
           </NavItem>
-          </li> */}
+          </li> */ }
 
           <NavItem>
-            <Link to='services' className='nav-link'>
-             <AnchorLink href="#services">services</AnchorLink> 
-            </Link>
+            {/* <Link to='services' >
+            </Link> */}
+             <AnchorLink href="#services" className='nav-link'>services</AnchorLink> 
           </NavItem>
 
           <NavItem>
-            <Link to='portfolio' className='nav-link'>
-            <AnchorLink href="#portfolio">portfolio</AnchorLink>
-            </Link>
+            {/* <Link to='portfolio' className='nav-link'>
+            </Link> */}
+            <AnchorLink href="#portfolio" className='nav-link'>portfolio</AnchorLink>
           </NavItem>
 
           <NavItem>
-            <Link to='skills' className='nav-link'>
-            <AnchorLink href="#skills">skills</AnchorLink>
-            </Link>
+            {/* <Link to='skills' className='nav-link'>
+            </Link> */}
+            <AnchorLink href="#skills" className='nav-link'>skills</AnchorLink>
           </NavItem>
 
           <NavItem>
-          <Link to='contact' className='nav-link nav-cta'>
-          <AnchorLink href="#contact">contact</AnchorLink>
-            </Link>
+          {/* <Link to='contact' className='nav-link nav-cta'>
+            </Link> */}
+          <AnchorLink href="#contact" className='nav-link'>contact</AnchorLink>
           </NavItem>
         </ul>
       </Nav>

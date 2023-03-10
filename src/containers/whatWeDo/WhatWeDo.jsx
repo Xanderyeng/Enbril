@@ -1,22 +1,32 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { staggerContainer } from "../../utils/motion";
 import "./whatwedo.css";
 import { backend } from "../../assets";
 import { frontEnd } from "../../assets";
 import { visual } from "../../assets";
 // import { svgLeft } from "../../assets";
 // import { svgRight } from "../../assets";
-import { Service } from "../../components";
-import Services from "../../components/what-we-do/Services";
+import { services } from "../../constants";
+// import { Service } from "../../components";
+import ServiceCard from "../../components/what-we-do/ServiceCard";
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
 // import pStar from "../../assets/Purple Star.svg"
 
 const WhatWeDo = () => {
   return (
-    <section className='section-what-we-do' id="services">
+    <motion.section variants={staggerContainer()}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.25 }} className='section-what-we-do' id='services'>
       {/* <div className="four-pointed-star"></div> */}
 
       {/* <span className='p-star'>{pStar}</span> */}
-      <SectionHeader subTitle={'services'} title1={'I provide wide range of'} title2={'digital services'}/>
+      <SectionHeader
+        subTitle={"services"}
+        title1={"I provide wide range of"}
+        title2={"digital services"}
+      />
       <div className='container'>
         {/* <span className='subheading'>
           {svgLeft}
@@ -28,7 +38,10 @@ const WhatWeDo = () => {
           <p>digital services</p>
         </h2> */}
         <div className='services-grid'>
-          <Service
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
+          {/* <Service
             icon={visual}
             title={"aesthetics"}
             text={
@@ -39,7 +52,6 @@ const WhatWeDo = () => {
             icon={frontEnd}
             title={"front-end"}
             text={
-              // "I provide front end development services to create an interactive, visually appealing user experience, with direct access to server data."
               "I provide front end development services for an interactive and visually appealing user experience."
             }
           />
@@ -49,7 +61,7 @@ const WhatWeDo = () => {
             text={
               "I provide backend development services to power website features, security and integration."
             }
-          />
+          /> */}
           {/* <div className='services'>
             {visual}
             <header>
@@ -84,8 +96,7 @@ const WhatWeDo = () => {
 
         {/*  */}
       </div>
-      
-    </section>
+    </motion.section>
   );
 };
 

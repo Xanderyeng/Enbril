@@ -35,10 +35,10 @@ const App = () => {
       <div className="footer">
         <Contact/>
         {/* <StarsCanvas/> */}
-      </div>
       <footer>
         <Footer />
       </footer>
+      </div>
     </section>
   );
 };

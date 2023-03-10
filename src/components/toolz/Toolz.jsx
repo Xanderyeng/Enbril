@@ -16,6 +16,7 @@ import {
 } from "../../assets/svg";
 import "./toolz.css";
 import SectionHeader from "../sectionHeader/SectionHeader";
+import { StarWrapper } from "../../hoc";
 
 const responsive = {
   superLargeDesktop: {
@@ -96,4 +97,4 @@ const Toolz = () => {
   );
 };
 
-export default Toolz;
+export default StarWrapper(Toolz,'');

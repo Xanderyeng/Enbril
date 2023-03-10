@@ -6,6 +6,7 @@ import { updating } from "../../assets";
 import { visual } from "../../assets";
 import "./how.css";
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
+import { StarWrapper } from "../../hoc";
 
 const How = () => {
     
@@ -27,4 +28,4 @@ const How = () => {
   );
 };
 
-export default How;
+export default StarWrapper( How, 'process');

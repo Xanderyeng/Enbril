@@ -11,17 +11,13 @@ import { services } from "../../constants";
 // import { Service } from "../../components";
 import ServiceCard from "../../components/what-we-do/ServiceCard";
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
+import { StarWrapper } from "../../hoc";
 // import pStar from "../../assets/Purple Star.svg"
 
 const WhatWeDo = () => {
   return (
-    <motion.section variants={staggerContainer()}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: true, amount: 0.25 }} className='section-what-we-do' id='services'>
-      {/* <div className="four-pointed-star"></div> */}
-
-      {/* <span className='p-star'>{pStar}</span> */}
+    <>
+    <div className="spacer"></div>
       <SectionHeader
         subTitle={"services"}
         title1={"I provide wide range of"}
@@ -38,9 +34,9 @@ const WhatWeDo = () => {
           <p>digital services</p>
         </h2> */}
         <div className='services-grid'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
           {/* <Service
             icon={visual}
             title={"aesthetics"}
@@ -96,8 +92,8 @@ const WhatWeDo = () => {
 
         {/*  */}
       </div>
-    </motion.section>
+    </>
   );
 };
 
-export default WhatWeDo;
+export default StarWrapper(WhatWeDo, "services");

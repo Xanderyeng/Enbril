@@ -19,6 +19,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.footer {
+  position: relative;
+  z-index: 0;
+}
+
 html {
   font-size: 62.5%;
   overflow: overlay;

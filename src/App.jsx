@@ -1,5 +1,6 @@
 import React from "react";
 import { Contact, Footer, Hero, How, Logos, Portfolio, WhatWeDo } from "./containers";
+import {StarsCanvas} from './containers/canvas'
 import { Star } from "./components/Star/Star";
 import "./App.css";
 import { Navbar, Toolz } from "./components";
@@ -31,7 +32,10 @@ const App = () => {
       <Portfolio />
       <How />
       <Toolz />
-      <Contact/>
+      <div className="footer">
+        <Contact/>
+        {/* <StarsCanvas/> */}
+      </div>
       <footer>
         <Footer />
       </footer>

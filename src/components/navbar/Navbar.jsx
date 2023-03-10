@@ -82,23 +82,18 @@ const Navbar = () => {
           </li> */ }
 
           <NavItem>
-            {/* <Link to='services' >
-            </Link> */}
              <AnchorLink href="#services" className='nav-link'>services</AnchorLink> 
           </NavItem>
 
           <NavItem>
-            {/* <Link to='portfolio' className='nav-link'>
-            </Link> */}
             <AnchorLink href="#portfolio" className='nav-link'>portfolio</AnchorLink>
           </NavItem>
-
+          {/* <NavItem>
+            <AnchorLink href="#process" className='nav-link'>How</AnchorLink>
+          </NavItem> */}
           <NavItem>
-            {/* <Link to='skills' className='nav-link'>
-            </Link> */}
             <AnchorLink href="#skills" className='nav-link'>skills</AnchorLink>
           </NavItem>
-
           <NavItem>
           {/* <Link to='contact' className='nav-link nav-cta'>
             </Link> */}

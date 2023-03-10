@@ -1,6 +1,7 @@
 import { React, useState, useRef } from "react";
 import { svgLeft } from "../../assets";
 import { svgRight } from "../../assets";
+import {StarsCanvas} from '../canvas/index'
 import {
   elipse,
   SMS,
@@ -88,6 +89,7 @@ const Contact = () => {
 
   return (
     <section className='section-contact' id="contact">
+    <StarsCanvas/>
       <div className='container grid grid--2-cols'>
         {/* Contact Info */}
         <div className='connect-info'>
